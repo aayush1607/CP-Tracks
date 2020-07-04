@@ -18,38 +18,38 @@ class CarouselMapped extends Component {
 class CarouselMapped extends Component {
   render() {
     return (
-      <div class="site-header w-100">
-        <div id="carouselExample" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
+      <div className="site-header w-100">
+        <div id="carouselExample" className="carousel slide" data-ride="carousel">
+          <ol className="carousel-indicators">
             <li
               data-target="#carouselExample"
               data-slide-to="0"
-              class="active"
+              className="active"
             ></li>
             <li data-target="#carouselExample" data-slide-to="1"></li>
             <li data-target="#carouselExample" data-slide-to="2"></li>
           </ol>
 
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
               <img
                 src={require("../../assets/cp-carousel.png")} 
                 alt="First Slide"
-                class="d-block w-100"
+                className="d-block w-100"
               />
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <img
                src={require("../../assets/python-carousel.png")}
                 alt="Second Slide"
-                class="d-block w-100"
+                className="d-block w-100"
               />
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <img
                 src={require("../../assets/cpp-carousel.png")}
                 alt="Third Slide"
-                class="d-block w-100"
+                className="d-block w-100"
               />
             </div>
           </div>

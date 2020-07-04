@@ -4,16 +4,16 @@ import "./postCard.css";
 
 export default function PostCard({ cardInfo }) {
   return (
-    <div class="col-md-4">
-      <div class="card shadow">
-        <div class="inner">
-          <img class="card-img-top" src={cardInfo.image} alt={cardInfo.alt} />
+    <div className="col-md-4">
+      <div className="card shadow">
+        <div className="inner">
+          <img className="card-img-top" src={cardInfo.image} alt={cardInfo.alt} />
         </div>
 
-        <div class="card-body">
-          <h4 class="card-title">{cardInfo.heading}</h4>
-          <p class="card-text">{cardInfo.text}</p>
-          <a href="#" class="btn btn-success">
+        <div className="card-body">
+          <h4 className="card-title">{cardInfo.heading}</h4>
+          <p className="card-text">{cardInfo.text}</p>
+          <a href="#" className="btn btn-success">
             Practise
           </a>
         </div>
