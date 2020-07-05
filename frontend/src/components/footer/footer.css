@@ -6,47 +6,41 @@ a {
   text-decoration: none;
   color: white;
 }
-.icons{
+.icons {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-
 @media only screen and (max-width: 993px) {
-
-.icons{
-  display: flex;
-  flex-direction: column;
-}
+  .icons {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 600px) {
-
-  .content-3{
+  .content-3 {
     font-size: medium;
   }
-  }
-  
+}
 
 @media only screen and (max-width: 390px) {
-
-    .content-3{
-      font-size: small;
-    }
-    h6{
-      font-size: small;
-    }
+  .content-3 {
+    font-size: small;
   }
-  
+  h6 {
+    font-size: small;
+  }
+}
+
 @media only screen and (max-width: 350px) {
-
-    .content-3{
-      font-size: smaller;
-    }
-    h6{
-      font-size: smaller;
-    }
-    .col-3{
-      margin-right: 25px;
-    }
+  .content-3 {
+    font-size: smaller;
   }
+  h6 {
+    font-size: smaller;
+  }
+  .col-3 {
+    margin-right: 25px;
+  }
+}

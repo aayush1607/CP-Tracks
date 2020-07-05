@@ -41,7 +41,9 @@ class Posts extends Component {
     return (
       <div className="container" id="practise">
         <div className="row justify-content-center">
-          {this.state.posts.map(post => <PostCard key={post.id} cardInfo={post.cardInfo}/>)}
+          {this.state.posts.map((post) => (
+            <PostCard key={post.id} cardInfo={post.cardInfo} />
+          ))}
         </div>
       </div>
     );

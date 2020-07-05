@@ -7,7 +7,11 @@ export default function PostCard({ cardInfo }) {
     <div className="col-md-4 postcard">
       <div className="card shadow">
         <div className="inner">
-          <img className="card-img-top" src={cardInfo.image} alt={cardInfo.alt} />
+          <img
+            className="card-img-top"
+            src={cardInfo.image}
+            alt={cardInfo.alt}
+          />
         </div>
 
         <div className="card-body">
