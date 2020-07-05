@@ -4,7 +4,7 @@ import "./postCard.css";
 
 export default function PostCard({ cardInfo }) {
   return (
-    <div className="col-md-4">
+    <div className="col-md-4 postcard">
       <div className="card shadow">
         <div className="inner">
           <img className="card-img-top" src={cardInfo.image} alt={cardInfo.alt} />

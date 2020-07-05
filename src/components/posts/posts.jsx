@@ -12,7 +12,7 @@ class Posts extends Component {
           image: require("../../assets/cpcard.png"),
           alt: "Competitive Programming",
           text:
-            "Get ready to practise and learn to compete! A track for mastering Competitive Programming. Happy Coding!",
+            "Get ready to learn to compete! A track for mastering Competitive Programming.",
         },
       },
       {
@@ -40,7 +40,7 @@ class Posts extends Component {
   render() {
     return (
       <div className="container" id="practise">
-        <div className="row justify-content-center justify-content-space-between">
+        <div className="row justify-content-center">
           {this.state.posts.map(post => <PostCard key={post.id} cardInfo={post.cardInfo}/>)}
         </div>
       </div>
