@@ -28,7 +28,7 @@ class Footer extends Component {
             <br />
             <div className="footer border-top ">
               <br />
-              <div className="row justify-content-between">
+              <div className="row justify-content-around text-white">
                 <Creators />
                 <Community />
                 <ContactUs />

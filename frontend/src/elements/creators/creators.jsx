@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./creators.css";
 class Creators extends Component {
   state = {
     creators: [
@@ -22,25 +22,31 @@ class Creators extends Component {
   };
   render() {
     return (
-      <div className="col-3">
-        <div className="d-flex flex-column">
-          <h6 className="text-white">Creators</h6>
-          <ul className="text-white">
-            {this.state.creators.map((creator) => (
-              <li key={creator}>
-                {creator.name}
-                &nbsp;
-                <a href={creator.linkedin}>
-                  <i class="fab fa-linkedin" href={creator.linkedin}></i>
-                </a>
-                &nbsp;
-                <a href={creator.github}>
-                  <i class="fab fa-github"></i>
-                </a>
-                &nbsp;
-              </li>
-            ))}
-          </ul>
+      <div className="col-3 justify-content-start">
+        <div className="d-flex flex-column text-white">
+          <h5>Creators</h5>
+          {this.state.creators.map((creator) => (
+            <p className="d-print-none" key={creator}>
+              {creator.name}
+              <a
+                href={creator.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon-button linkedin"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+
+              <a
+                href={creator.github}
+                className="icon-button github"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+            </p>
+          ))}
         </div>
       </div>
     );
