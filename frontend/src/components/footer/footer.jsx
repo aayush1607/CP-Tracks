@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./footer.css";
 
 import Creators from "../../elements/creators/creators.jsx"
+import Community from "../../elements/community/community.jsx"
 
 class Footer extends Component {
  
@@ -29,21 +30,8 @@ class Footer extends Component {
               <br />
               <div className="row justify-content-center">
                 <Creators />
-
-                <div className="col-3">
-                  <div className="d-flex flex-column">
-                    <h6 className="text-white">Community</h6>
-
-                    <a href="#">Home</a>
-                    <br />
-                    <a href="#practise">Practise</a>
-                    <br />
-                    <a href="#about">About Us</a>
-                    <br />
-                    <a href="#">Blog</a>
-                    <br />
-                  </div>
-                </div>
+                <Community />
+                
                 <div className="col-3">
                   <div className="d-flex flex-column">
                     <h6 className="text-white">Connect & Contact Us</h6>
